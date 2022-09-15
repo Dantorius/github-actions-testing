@@ -1,0 +1,15 @@
+name: testing-workflow
+on:
+  workflow_dispatch:
+    
+    
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say Hello"
+        uses: dantorius/custom-docker-action@v1
+        with:
+          who-to-greet: Dantorius
+  
+  
